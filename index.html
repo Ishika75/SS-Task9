@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device, initial-scale=1.0">
+    </head>
+    <body>
+	<style>
+	*{
+margin: 0;
+padding: 0;
+font-family: sans-serif
+}
+.bg1{
+background-image: url("images/bg1.jpg");
+background-position: center;
+background-repeat: no-repeat; 
+background-size: cover; 
+}
+.container{
+width: 100%;
+min-height: 100vh;
+padding-left: 8%;
+padding-right: 8%;
+box-sizing: border-box;
+overflow: hidden;
+}
+.navbar{
+width: 100%;
+display: flex;
+align-items: center;
+}
+.logo{
+width: 100px;
+cursor: pointer;
+margin: 30px;
+}
+.menu-icon{
+width: 25px;
+cursor: pointer;
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul li{
+list-style: none;
+display: inline-block;
+margin-right: 30px;
+}
+nav ul li a{
+text-decoration: none;
+color: black;
+font-size: 14px;
+}
+nav ul li a:hover{
+color: #08ec1b;
+}
+.row{
+display: flex;
+justify-content: space-between;
+text-align: auto;
+margin: 125px 400px ;
+}
+.col-1{
+flex-basis: 40%;
+position: absolute;
+}
+.col-1 h2{
+font-size: 45px;
+color: aliceblue;
+-webkit-text-stroke:   0.2px black;
+}
+.para{
+color: #ffffff;
+text-align: left;
+margin: 10px;
+font-size: 25px;
+}
+	</style>
+      <div class="bg1">   
+            <div class="container">
+                            <div class="navbar">
+                                <img src="images/logo.png" class="logo">
+                                <nav>
+                                    <ul>
+                                        <li><a href="">Home</a></li>
+                                        <li><a href="service.html">Service</a></li>
+                                    </ul>
+                                </nav>
+                                <img src="images/menu-logo.png" class="menu-icon">
+                            </div>
+                            <div class="row">
+                                <div class="col-1">
+                                    <h2>AUTOMATED <span class="typeeffect"></span></h2>
+                                    <p class ="para">
+                                        This is my team task with my team Summer_08_02.<br>
+                                        In this task, our approach is to integrate <br>
+                                        web-development with python-cgi and backend tech.
+                                    </p>
+									<script src="typed.min.js"></script>
+                                    <script>
+                                        var typed= new Typed('.typeeffect',{
+                                        strings: ['BY US', 'FOR YOU'],
+                                        typeSpeed: 60,
+                                        backSpeed: 60,
+                                        loop: true,
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+            </div>
+      </div>
+    </body>
+</html>
